@@ -11,13 +11,13 @@ import tomatoSaladImg from '@/assets/tomato-salad.jpg';
 import classes from './image-slideshow.module.css';
 
 const images = [
-  { image: burgerImg, alt: 'A delicious, juicy burger' },
-  { image: curryImg, alt: 'A delicious, spicy curry' },
-  { image: dumplingsImg, alt: 'Steamed dumplings' },
+  { image: burgerImg, alt: 'Burger Enak dan Nimmat' },
+  { image: curryImg, alt: 'Kari Enak dan Pedas' },
+  { image: dumplingsImg, alt: 'Dumpling Kukus' },
   { image: macncheeseImg, alt: 'Mac and cheese' },
-  { image: pizzaImg, alt: 'A delicious pizza' },
-  { image: schnitzelImg, alt: 'A delicious schnitzel' },
-  { image: tomatoSaladImg, alt: 'A delicious tomato salad' },
+  { image: pizzaImg, alt: 'Pizza yang Nikmat' },
+  { image: schnitzelImg, alt: 'Schnitzel yang Menggugah' },
+  { image: tomatoSaladImg, alt: 'Salad Tomat Yang Segar' },
 ];
 
 export default function ImageSlideshow() {
