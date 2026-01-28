@@ -1,5 +1,5 @@
 import './globals.css';
-import MainHeader from './layout/main-header/header';
+import MainHeader from '@/layout/main-header/header';
 
 export const metadata = {
   title: 'MakananEnak',
