@@ -3,22 +3,22 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
-import burgerImg from '@/assets/burger.jpg';
-import curryImg from '@/assets/curry.jpg';
-import dumplingsImg from '@/assets/dumplings.jpg';
-import macncheeseImg from '@/assets/macncheese.jpg';
-import pizzaImg from '@/assets/pizza.jpg';
-import schnitzelImg from '@/assets/schnitzel.jpg';
+import pastelImg from '@/assets/pastel.png';
+import bakwanUdangImg from '@/assets/bakwan.png';
+import bakwanJagungImg from '@/assets/bakwanjagung.png';
+import donatImg from '@/assets/donat.png';
+import pisangImg from '@/assets/pisang.png';
+import sumedangImg from '@/assets/tahusumedang.png';
 import tomatoSaladImg from '@/assets/tomato-salad.jpg';
 import classes from './image-slideshow.module.css';
 
 const images = [
-  { image: burgerImg, alt: 'Burger Enak dan Nimmat' },
-  { image: curryImg, alt: 'Kari Enak dan Pedas' },
-  { image: dumplingsImg, alt: 'Dumpling Kukus' },
-  { image: macncheeseImg, alt: 'Mac and cheese' },
-  { image: pizzaImg, alt: 'Pizza yang Nikmat' },
-  { image: schnitzelImg, alt: 'Schnitzel yang Menggugah' },
+  { image: pastelImg, alt: 'Pastel / Korket Enak dan Nikmat' },
+  { image: bakwanUdangImg, alt: 'Bakwan Udang Enak dan Pedas' },
+  { image: bakwanJagungImg, alt: 'Bakwan Jagung Gurih' },
+  { image: donatImg, alt: 'Donat Padat dan Manis' },
+  { image: pisangImg, alt: 'Pisang Goreng Enak dan Manis' },
+  { image: sumedangImg, alt: 'Schnitzel yang Menggugah' },
   { image: tomatoSaladImg, alt: 'Salad Tomat Yang Segar' },
 ];
 
