@@ -1,9 +1,10 @@
 import Link from "next/link";
 
 import MainHeaderBackground from "./main-header-background";
-import logoImg from '@/assets/logo.png';
-import classes from './main-header.module.css';
+import logoImg from "@/assets/logo.png";
+import classes from "./main-header.module.css";
 import Image from "next/image";
+import NavLink from "./nav-link";
 
 export default function MainHeader() {
   return (
@@ -18,14 +19,14 @@ export default function MainHeader() {
         <nav className={classes.nav}>
           <ul>
             <li>
-              <Link href="/meals" className="">Cari Gorengan</Link>
+              <NavLink href="/meals">Cari Gorengan</NavLink>
             </li>
             <li>
-              <Link href="/community">Komunitas</Link>
+              <NavLink href="/community">Komunitas</NavLink>
             </li>
           </ul>
         </nav>
       </header>
     </>
-  )
+  );
 }

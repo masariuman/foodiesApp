@@ -1,18 +1,22 @@
-import Image from 'next/image';
+import Image from "next/image";
 
-import mealIcon from '@/assets/icons/meal.png';
-import communityIcon from '@/assets/icons/community.png';
-import eventsIcon from '@/assets/icons/events.png';
-import classes from './page.module.css';
+import mealIcon from "@/assets/icons/meal.png";
+import communityIcon from "@/assets/icons/community.png";
+import eventsIcon from "@/assets/icons/events.png";
+import classes from "./page.module.css";
 
 export default function CommunityPage() {
   return (
     <>
       <header className={classes.header}>
         <h1>
-          Satu Passion yang Sama : <span className={classes.highlight}>Gorengan</span>
+          Satu Passion yang Sama :{" "}
+          <span className={classes.highlight}>Gorengan</span>
         </h1>
-        <p>Ayo bergabung ke komunitas kami dan bagikan resep gorengan favorit anda !</p>
+        <p>
+          Ayo bergabung ke komunitas kami dan bagikan resep gorengan favorit
+          anda !
+        </p>
       </header>
       <main className={classes.main}>
         <h2>Community Perks</h2>
