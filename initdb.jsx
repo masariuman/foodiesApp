@@ -90,7 +90,7 @@ const dummyMeals = [
   {
     title: "Pisang Goreng",
     slug: "pisang-goreng",
-    image: "/images/pisang-png",
+    image: "/images/pisang.png",
     summary: "Pisang goreng renyah manis penuh energi.",
     instructions: `
       1. Belah pisang dari dari ujung menuju bawah tapi tidak putus, buat 4 belahan.
