@@ -3,164 +3,167 @@ const db = sql("meals.db");
 
 const dummyMeals = [
   {
-    title: "Juicy Cheese Burger",
-    slug: "juicy-cheese-burger",
-    image: "/images/burger.jpg",
-    summary:
-      "A mouth-watering burger with a juicy beef patty and melted cheese, served in a soft bun.",
+    title: "Paster Enak",
+    slug: "pastel-enak",
+    image: "/images/pastel.png",
+    summary: "Paste enak dengan isi yang mengenyangkan.",
     instructions: `
-      1. Prepare the patty:
-         Mix 200g of ground beef with salt and pepper. Form into a patty.
+      1. Potong dadu wortel dan kentang.
 
-      2. Cook the patty:
-         Heat a pan with a bit of oil. Cook the patty for 2-3 minutes each side, until browned.
+      2. Tumis bawang putih hingga harum, kemudian masukan kentang dan wortel, tumis dan tambahkan garam secukupnya.
 
-      3. Assemble the burger:
-         Toast the burger bun halves. Place lettuce and tomato on the bottom half. Add the cooked patty and top with a slice of cheese.
+      3. Apabila sudah matang, masukan soun dan tuangkan campuran air dan tepung sedikit-sedikit.
 
-      4. Serve:
-         Complete the assembly with the top bun and serve hot.
+      4. Masak hingga matang dan sisihkan.
+
+      5. Untuk kulit Pastel. Lelehkan margarin dan tunggu hingga agak hangat/suhu ruang.
+
+      6. Pada wadah yang cukup besar, campurkan semua bahan kering. Masukan margarin cair sedikit-sedikit sambil terus diaduk. Lalu bisa tambahkan 1 sendok minyak dan aduk kembali.
+
+      7. Jika sudah tercampur. Masukan air sedikit-sedikit sambil diuleni dengan tangan hingga bahan tercampur dan sudah tidak menempel diwadah atau tangan.
+
+      8. Adonan wajib di resting 15-30 menit. Sebelum di berikan isian.
+
+      9. Setelah pastel diisi dan dibentuk. Goreng pastel menggunakan minyak panas namun api sedang hingga kuning keemasan.
     `,
-    creator: "John Doe",
-    creator_email: "johndoe@example.com",
+    creator: "Arif Setiawan",
+    creator_email: "arif_seiawan@masariuman.com",
   },
   {
-    title: "Spicy Curry",
-    slug: "spicy-curry",
-    image: "/images/curry.jpg",
-    summary:
-      "A rich and spicy curry, infused with exotic spices and creamy coconut milk.",
+    title: "Bakwan Udang",
+    slug: "bakwan-udang",
+    image: "/images/bakwan.png",
+    summary: "Bakwan nikmat dengan topping udang diatasnya.",
     instructions: `
-      1. Chop vegetables:
-         Cut your choice of vegetables into bite-sized pieces.
+      1. Campurkan wortel yang sudah diserut korek api dan kol yang sudah diiris halus. Masukkan tepung serba guna aduk hingga tercampur rata.
 
-      2. Sauté vegetables:
-         In a pan with oil, sauté the vegetables until they start to soften.
+      2. Beri air sedikit demi sedikit sampai semua tercampur. Masukkan telur aduk lagi. Terakhir masukkan udang. Aduk lagi, adonan bakwan siap dicetak dan masak.
 
-      3. Add curry paste:
-         Stir in 2 tablespoons of curry paste and cook for another minute.
-
-      4. Simmer with coconut milk:
-         Pour in 500ml of coconut milk and bring to a simmer. Let it cook for about 15 minutes.
-
-      5. Serve:
-         Enjoy this creamy curry with rice or bread.
+      3. Panaskan minyak, tuang adonan ke sendok cetakan bakwan. Benamkan ke minyak. Bolak balik hingga kedua sisi coklat matang merata. Angkat dan tiriskan. Susun di piring saji bakwan udang enak sekali disajikan dengan cabe rawit. Bikiiiin nagih..
     `,
-    creator: "Max Schwarz",
-    creator_email: "max@example.com",
+    creator: "MasariuMan",
+    creator_email: "masariuman@masariuman.com",
   },
   {
-    title: "Homemade Dumplings",
-    slug: "homemade-dumplings",
-    image: "/images/dumplings.jpg",
+    title: "Bakwan Jagung",
+    slug: "bakwan-jagung",
+    image: "/images/bakwanjagung.png",
     summary:
-      "Tender dumplings filled with savory meat and vegetables, steamed to perfection.",
+      "bakwan yang dibuat dengan jagung, dan agak berbeda hasilnya dari bakwan udang karena lebih tipis.",
     instructions: `
-      1. Prepare the filling:
-         Mix minced meat, shredded vegetables, and spices.
+      1. Ulegh bumbu halusnya.
 
-      2. Fill the dumplings:
-         Place a spoonful of filling in the center of each dumpling wrapper. Wet the edges and fold to seal.
+      2. Tambahkan jagung sisir, wortel serut, dan daun bawang, siapkan bahan lainnya juga.
 
-      3. Steam the dumplings:
-         Arrange dumplings in a steamer. Steam for about 10 minutes.
+      3. Campur bumbu halus, sayuran, tepung terigu, tepung beras, tepung tapioka dan baking powder jadi satu. Kemudian tmbahkan air sedikit demi sedikit, aduk hingga adonan kental.
 
-      4. Serve:
-         Enjoy these dumplings hot, with a dipping sauce of your choice.
+      4. Panaskan minyak, ambil adonan dengan sendok, goreng hingga kuning keemasan. Tiriskan dan siap disajikan.
     `,
-    creator: "Emily Chen",
-    creator_email: "emilychen@example.com",
+    creator: "The Arif",
+    creator_email: "thearif@masariuman.com",
   },
   {
-    title: "Classic Mac n Cheese",
-    slug: "classic-mac-n-cheese",
-    image: "/images/macncheese.jpg",
-    summary:
-      "Creamy and cheesy macaroni, a comforting classic that's always a crowd-pleaser.",
+    title: "Donat Gula",
+    slug: "donat-gula",
+    image: "/images/donat.png",
+    summary: "Donat yang manis dan mengenyangkan.",
     instructions: `
-      1. Cook the macaroni:
-         Boil macaroni according to package instructions until al dente.
+      1. Campur gula pasir, SP, dan air hangat, aduk hingga SP benar-benar larut.
 
-      2. Prepare cheese sauce:
-         In a saucepan, melt butter, add flour, and gradually whisk in milk until thickened. Stir in grated cheese until melted.
+      2. Masukkan terigu, fermipan, dan telur ke dalam campuran tadi, uleni hingga setengah kalis.
 
-      3. Combine:
-         Mix the cheese sauce with the drained macaroni.
+      3. Tambahkan margarin dan baking powder, uleni lagi sampai adonan kalis elastis.
 
-      4. Bake:
-         Transfer to a baking dish, top with breadcrumbs, and bake until golden.
+      4. Diamkan adonan 30 menit hingga mengembang 2x lipat.
 
-      5. Serve:
-         Serve hot, garnished with parsley if desired.
+      5. Kempiskan adonan, bentuk bulat, lubangi tengahnya.
+
+      6. Diamkan lagi 15 menit.
+
+      7. Goreng donat dalam minyak panas sedang hingga kuning keemasan.
+
+      8. Angkat, tiriskan, taburi gula donat saat masih hangat.
     `,
-    creator: "Laura Smith",
-    creator_email: "laurasmith@example.com",
+    creator: "Arif",
+    creator_email: "arif@masariuman.com",
   },
   {
-    title: "Authentic Pizza",
-    slug: "authentic-pizza",
-    image: "/images/pizza.jpg",
-    summary:
-      "Hand-tossed pizza with a tangy tomato sauce, fresh toppings, and melted cheese.",
+    title: "Pisang Goreng",
+    slug: "pisang-goreng",
+    image: "/images/pisang-png",
+    summary: "Pisang goreng renyah manis penuh energi.",
     instructions: `
-      1. Prepare the dough:
-         Knead pizza dough and let it rise until doubled in size.
+      1. Belah pisang dari dari ujung menuju bawah tapi tidak putus, buat 4 belahan.
 
-      2. Shape and add toppings:
-         Roll out the dough, spread tomato sauce, and add your favorite toppings and cheese.
+      2. Pada wadah, tuang tepung trigu, maizena dan margarin. Tambahkan air sedikit - sedikit sampai adonan tidak terlalu encer tidak terlalu kental, cirinya jika dituang pakai sendok adonan jatuh seperti pita besar tidak putus-putus.
 
-      3. Bake the pizza:
-         Bake in a preheated oven at 220°C for about 15-20 minutes.
+      3. Panaskan Minyak dan goreng pisang sampai kuning keemasan. Jangan di bolak balik ya, jika bagian bawah sudah agak menguning balik dan tunggu sampai matang, lalu angkat dan tiriskan.
 
-      4. Serve:
-         Slice hot and enjoy with a sprinkle of basil leaves.
+      4. Pisang goreng kipas hangat dan secangkir teh siap menemani hari mu lebih berwarna.
     `,
-    creator: "Mario Rossi",
-    creator_email: "mariorossi@example.com",
+    creator: "Setiawan",
+    creator_email: "setiawan@masariuman.com",
   },
   {
-    title: "Wiener Schnitzel",
-    slug: "wiener-schnitzel",
-    image: "/images/schnitzel.jpg",
-    summary:
-      "Crispy, golden-brown breaded veal cutlet, a classic Austrian dish.",
+    title: "Tahu Sumedang",
+    slug: "tahu-sumedang",
+    image: "/images/tahusumedang.png",
+    summary: "Tahu Sumedang yang gurih dan nikmat serta enak dimulut.",
     instructions: `
-      1. Prepare the veal:
-         Pound veal cutlets to an even thickness.
+      1. Siapkan tahu putih, serta bumbunya yaitu bawang putih, ketumbar bubuk, garam dan minyak goreng ROSE BRAND, baking powder dan baking soda. Tahu putih dipotong kotak2 sisihkan
 
-      2. Bread the veal:
-         Coat each cutlet in flour, dip in beaten eggs, and then in breadcrumbs.
+      2. Siapkan bawang putih, ketumbar dan garam yg dihaluskan, lalu masukkan kedalam panci yg sdh diisi air. Didihkan. Setelah mendidih lalu matikan api kompor, masukkan baking powder dan baking soda aduk2 sebentar agar tercampur rata lalu tuangkan ke wadah yang berisi tahu. Tahu harus terendam air bumbu. Diamkan minim 1 jam agar bumbu meresap.
 
-      3. Fry the schnitzel:
-      Heat oil in a pan and fry each schnitzel until golden brown on both sides.
+      3. Setelah bumbu meresap, siapkan minyak goreng ROSE BRAND, tuang di wajan dan goreng tahu hingga matang. Setelah matang, angkat, tiriskan.
 
-      4. Serve:
-      Serve hot with a slice of lemon and a side of potato salad or greens.
+      4. Tata di piring sajikan bersama cabe rawit atau sambal kecap
  `,
-    creator: "Franz Huber",
-    creator_email: "franzhuber@example.com",
+    creator: "Avatar",
+    creator_email: "avatar@masariuman.com",
   },
   {
-    title: "Fresh Tomato Salad",
-    slug: "fresh-tomato-salad",
-    image: "/images/tomato-salad.jpg",
-    summary:
-      "A light and refreshing salad with ripe tomatoes, fresh basil, and a tangy vinaigrette.",
+    title: "Risoles Mayones",
+    slug: "risoles-mayones",
+    image: "/images/risol.png",
+    summary: "Risoles Mayones yang nikmat dan mengenyangkan.",
     instructions: `
-      1. Prepare the tomatoes:
-        Slice fresh tomatoes and arrange them on a plate.
+      1. Masukan semua adonan bahan kulit aduk sampai tercampur, kemudian di saring agar hasilnya tidak menggrindil. diamkan selama 5 menit.
     
-      2. Add herbs and seasoning:
-         Sprinkle chopped basil, salt, and pepper over the tomatoes.
+      2. Panaskan teplon anti lengket menggunakan api kecil, beri olesan margarin sedikit.kalau de rasa sudah agak hangat masukan adonan satu centong sayur yg sedang(tergantung teplon nya gede apa kecel ini ya).
     
-      3. Dress the salad:
-         Drizzle with olive oil and balsamic vinegar.
+      3. Suir suir ayam punjungan, parut telur rebus menggunakan parutan keju.
     
-      4. Serve:
-         Enjoy this simple, flavorful salad as a side dish or light meal.
+      4. Siapkan kulit risol satu persatu beri isian.
+
+      5. Siapkan tepung roti dan terung cair sebagai perekat.
+
+      6. Setelah semua de isi, masukan risol que adonan tepung basah, kemudian gulingkan que tepung panir.lakukan sambil de tekan agar merekat dg sempurna.
+
+      7. Panaskan minyak, goreng dengan api sedang cenderung kecil.
+
+      8. Risol isi ayam dan telur punjungan saus mayo siap de santap.
     `,
-    creator: "Sophia Green",
-    creator_email: "sophiagreen@example.com",
+    creator: "Raja Risol",
+    creator_email: "rajarisol@masariuman.com",
+  },
+  {
+    title: "Tempe Mendoan",
+    slug: "tempe-mendoan",
+    image: "/images/tempe.png",
+    summary: "Tempe Mendoan Besar dan Nikmat.",
+    instructions: `
+      1. Iris tempe tipis-tipis. Sisihkan.
+    
+      2. Campurkan terigu, maizena, tepung beras, dan baking powder. Aduk rata.
+    
+      3. Haluskan bawang putih dan ketumbar, lalu masukan ke dalam wadah tepung. Tambahkan kunyit bubuk dan garam.
+    
+      4. Masukan air sedikit demi sedikit, sambil di aduk rata. Konsistensi adonan tidak terlalu kental ataupun cair, hampir mirip seperti adonan rempeyek.
+
+      5. Celupkan tempe ke adonan tepung, goreng ke dalam minyak yang sudah panas. Goreng sampai golden brown. Angkat dan sajikan.
+    `,
+    creator: "Tempe King",
+    creator_email: "tempeking@masariuman.com",
   },
 ];
 
