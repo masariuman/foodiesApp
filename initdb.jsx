@@ -165,6 +165,82 @@ const dummyMeals = [
     creator: "Tempe King",
     creator_email: "tempeking@masariuman.com",
   },
+  {
+    title: "Martabak Telur",
+    slug: "martabak-telur",
+    image: "/images/martabak.png",
+    summary: "Martabak Telur yg Gemuk dan Mengenyangkan.",
+    instructions: `
+      1. Letakkan semua bahan isian (sosis, bwg pree, telor) dalam mangkok (kecuali kulit lompia), beri bumbu kari, garam, kaldu jamur & merica bubuk.. Setelah itu aduk pelan pelan sampai tercampur rata.
+    
+      2. Panaskan teflon.. Beri minyak goreng kurleb 5-6 sdk makan.. Krn ini konsepnya menggoreng.. Bukan memamggang.. Jd agk sedikit banyak minyaknya.
+    
+      3. Letakkan, susun kulit lompia menutupi teflon.. Utk lapisan bawah ini saya pakai 4 lembar.. Lalu tuang adonan isi.
+    
+      4. Agar tdk bocor.. Setelah tertutup lapisan atas boleh ditutup lagi dgn kulit lompia.
+
+      5. Masak dgn api kecil cendenung sedang.. Agar tdk gosong.
+
+      6. Masak dgn api kecil cendenung sedang.. Agar tdk gosong.
+
+      7. Setelah 1 sisi matang.. Dibalik.. Agar sisi yg lainnya juga matang.. Pastikan adonan isi matang juga.. Agar mudah & tidak pecah.. Saya balik dengan bantuan 2 sutil.
+      
+      8. Masak sampai matang.. Tiriskan.. Letakkan dlm piring.. Lalu potong sesuai selera.. Sedap disajikan dgn pelengkap sesuai selera (agar, lombok atau saus sambal).
+    `,
+    creator: "Martabak Queen",
+    creator_email: "martabakqueen@masariuman.com",
+  },
+  {
+    title: "Telur Gulung",
+    slug: "telur-gulung",
+    image: "/images/telurgulung.png",
+    summary: "Telur Gulung Jajaan Tradisional Yang MANTAP.",
+    instructions: `
+      1. Campur semua bahan didalam botol lalu dikocok2.
+    
+      2. Panaskan minyak (make sure benar2 panas).
+    
+      3. Kalo uda panas tinggal sebar adonan dalam botol diatas minyak panas, lalu ambil dengan menggunakan tusukan kayu.
+    `,
+    creator: "Raja Telor Gulung",
+    creator_email: "rajatelorgulung@masariuman.com",
+  },
+  {
+    title: "Pempek Palembang",
+    slug: "pempek-palembang",
+    image: "/images/pempek.png",
+    summary: "Pempek Bukan dari Palembang, tapi Resep Palembang.",
+    instructions: `
+      1. Campur rata bahan biang sampai licin lalu masak dengan api kecil. Aduk terus sampai matang (kilap dan bau terigu hilang). Diamkan sampai hangat lalu masukkan 3butir telur aduk rata, kemudian tambahkan tapioka bertahap. Uleni sampai tidak lengket dan bisa dibentuk.
+    
+      2. Siapkan bahan isian telur, kocok jadi 1.
+    
+      3. Buat adonan pempek (25gr) lalu isi dengan telur, sisanya bisa dibuat pempek lenjer. Boleh banget pakai telur utuh tanpa kocok, tapi hati hati saat membuatnya, jangan sampai bocor. Tapi lama kelamaan akan terbiasa kok.. Dan rasanya mudah, serta lebih rapi dari yg difoto ini. Selagi membentuk pempek didihkan air tambah sedikit minyak goreng untuk merebus.
+    
+      4. Rebus pempek sampai mengapung. (Boleh langsung diolah kenjadi pempek goreng dengan kuah cuko atau sebagai stok cemilan di frozen).
+    `,
+    creator: "Pempek Lejen",
+    creator_email: "pempeklejen@masariuman.com",
+  },
+  {
+    title: "Pentol Goreng Banjarmasin",
+    slug: "pentol-goreng-banjarmasin",
+    image: "/images/pentolgoreng.png",
+    summary: "Pentol Goreng Mekar dari Banjarmasin.",
+    instructions: `
+      1. Membuat Adonan: Campur tepung tapioka, terigu, bawang putih, daun bawang, garam, merica, dan penyedap rasa. Tambahkan daging/ikan giling, aduk rata.
+    
+      2. Uleni: Tuang air panas sedikit demi sedikit sambil diuleni hingga adonan bisa dibentuk (kaldu/cair).
+    
+      3. Bentuk & Rebus: Ambil satu sendok teh adonan, bentuk bulat. Rebus dalam air mendidih yang sudah diberi sedikit minyak agar tidak lengket. Rebus hingga mengapung, tanda sudah matang. Angkat dan tiriskan, dinginkan.
+    
+      4. Menggoreng: Panaskan minyak di teflon. Celupkan pentol rebus ke dalam kocokan telur, goreng hingga berwarna cokelat keemasan.
+
+      5. Penyajian: Sajikan hangat dengan saus sambal pedas manis. 
+    `,
+    creator: "Pentol Banjar",
+    creator_email: "pentolbanjar@masariuman.com",
+  },
 ];
 
 db.prepare(
