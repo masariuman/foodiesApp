@@ -11,6 +11,10 @@ import pisangImg from "@/assets/pisang.png";
 import sumedangImg from "@/assets/tahusumedang.png";
 import risolImg from "@/assets/risol.png";
 import tempeImg from "@/assets/tempe.png";
+import martabakImg from "@/assets/martabak.png";
+import telurGulungImg from "@/assets/telurgulung.png";
+import pempekImg from "@/assets/pempek.png";
+import pentolGorengImg from "@/assets/pentolgoreng.png";
 import classes from "./image-slideshow.module.css";
 
 const images = [
@@ -25,6 +29,19 @@ const images = [
     alt: "Risoles dengan Isi Yang Mewah dan Nikmat",
   },
   { image: tempeImg, alt: "Tempe Mendoan Yang Mantap" },
+  { image: martabakImg, alt: "Martabak Nikmat dan Empuk" },
+  {
+    image: telurGulungImg,
+    alt: "Telur Gulung Tradisional Kesukaan Kita Semua",
+  },
+  {
+    image: pempekImg,
+    alt: "Pempek Palembang yang Bukan dari Palembang tapi Rasa dari Palembang",
+  },
+  {
+    image: pentolGorengImg,
+    alt: "Pentol Goreng Banjarmasir yg Kriuk dan Sedap",
+  },
 ];
 
 export default function ImageSlideshow() {
