@@ -24,6 +24,9 @@ export default function MainHeader() {
             <li>
               <NavLink href="/community">Komunitas</NavLink>
             </li>
+            <li>
+              <NavLink href="/meals/share">Bagikan Gorengan</NavLink>
+            </li>
           </ul>
         </nav>
       </header>
