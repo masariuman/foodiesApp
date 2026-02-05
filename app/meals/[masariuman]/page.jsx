@@ -1,19 +1,9 @@
 import Image from "next/image";
-import { getMeal } from "@/lib/meals";
 import classes from "./page.module.css";
-import { notFound } from "next/navigation";
-
-function Meal(id) {
-  const meal = getMeal(id.params.masariuman);
-  if (!meal) {
-    notFound();
-  }
-  meal.instructions = meal.instructions.replace(/\n/g, "<br />");
-  return meal;
-}
+import { mealDetail } from "./function";
 
 export default function MealDetailsPage({ params }) {
-  const data = Meal({ params });
+  const data = mealDetail({ params });
   return (
     <>
       <header className={classes.header}>
