@@ -1,11 +1,6 @@
-import { getMeal } from "@/lib/meals";
-import { notFound } from "next/navigation";
+import { getDetail } from "./service";
 
-export const mealDetail = (id) => {
-  const meal = getMeal(id.params.masariuman);
-  if (!meal) {
-    notFound();
-  }
-  meal.instructions = meal.instructions.replace(/\n/g, "<br />");
-  return meal;
-};
+export function mealDetail(id) {
+  const data = getDetail(id.params.masariuman);
+  return data;
+}
