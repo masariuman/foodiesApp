@@ -5,32 +5,33 @@ export default function ShareMealPage() {
     <>
       <header className={classes.header}>
         <h1>
-          Share your <span className={classes.highlight}>favorite meal</span>
+          Bagikan <span className={classes.highlight}>Gorengan Favorit </span>
+          Anda
         </h1>
-        <p>Or any other meal you feel needs sharing!</p>
+        <p>Atau Gorengan Lainnya Yang Ingin Anda Bagikan!</p>
       </header>
       <main className={classes.main}>
         <form className={classes.form}>
           <div className={classes.row}>
             <p>
-              <label htmlFor="name">Your name</label>
+              <label htmlFor="name">Nama</label>
               <input type="text" id="name" name="name" required />
             </p>
             <p>
-              <label htmlFor="email">Your email</label>
+              <label htmlFor="email">Email</label>
               <input type="email" id="email" name="email" required />
             </p>
           </div>
           <p>
-            <label htmlFor="title">Title</label>
+            <label htmlFor="title">Judul</label>
             <input type="text" id="title" name="title" required />
           </p>
           <p>
-            <label htmlFor="summary">Short Summary</label>
+            <label htmlFor="summary">Deksripsi Singkat</label>
             <input type="text" id="summary" name="summary" required />
           </p>
           <p>
-            <label htmlFor="instructions">Instructions</label>
+            <label htmlFor="instructions">Intruksi/Cara Pembuatan</label>
             <textarea
               id="instructions"
               name="instructions"
@@ -40,7 +41,7 @@ export default function ShareMealPage() {
           </p>
           IMAGE PICKER
           <p className={classes.actions}>
-            <button type="submit">Share Meal</button>
+            <button type="submit">Bagikan Gorengan</button>
           </p>
         </form>
       </main>
