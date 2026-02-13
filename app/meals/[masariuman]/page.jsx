@@ -1,6 +1,6 @@
 import Image from "next/image";
 import classes from "./page.module.css";
-import { mealDetail } from "./function";
+import { mealDetail } from "./handler";
 
 export default function MealDetailsPage({ params }) {
   const data = mealDetail({ params });
