@@ -1,6 +1,7 @@
 import ImagePicker from "@/layout/meals/image-picker";
 import classes from "./page.module.css";
 import { shareMeal } from "./handler";
+import { SubmitButtonLoading } from "./component";
 
 export default function ShareMealPage() {
   return (
@@ -43,7 +44,7 @@ export default function ShareMealPage() {
           </p>
           <ImagePicker label="Gorenganmu" name="image" />
           <p className={classes.actions}>
-            <button type="submit">Bagikan Gorengan</button>
+            <SubmitButtonLoading />
           </p>
         </form>
       </main>
