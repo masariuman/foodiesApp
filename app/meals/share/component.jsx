@@ -5,7 +5,7 @@ import { useFormStatus } from "react-dom";
 export const SubmitButtonLoading = () => {
   const { pending } = useFormStatus();
   return (
-    <button disable={pending}>
+    <button disabled={pending}>
       {pending ? "Menyimpan..." : "Bagikan Gorengan"}
     </button>
   );
