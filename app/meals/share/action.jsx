@@ -1,5 +1,8 @@
 "use server";
 
+import { saveMeal } from "@/lib/meals";
+import { redirect } from "next/dist/server/api-utils";
+
 export const store = async (formData) => {
   const meal = {
     title: formData.get("title"),
@@ -7,8 +10,9 @@ export const store = async (formData) => {
     instructions: formData.get("instructions"),
     image: formData.get("image"),
     creator: formData.get("name"),
-    creator_email: formData.get("email"),
+    creator_email: formData.ge  t("email"),
   };
-  console.log(meal);
+  await saveMeal(meal);
+  redirect('/meals');
   return s;
 };
