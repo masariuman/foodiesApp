@@ -10,9 +10,9 @@ export const store = async (formData) => {
     instructions: formData.get("instructions"),
     image: formData.get("image"),
     creator: formData.get("name"),
-    creator_email: formData.ge  t("email"),
+    creator_email: formData.get("email"),
   };
   await saveMeal(meal);
-  redirect('/meals');
+  redirect("/meals");
   // return s;
 };
