@@ -14,5 +14,5 @@ export const store = async (formData) => {
   };
   await saveMeal(meal);
   redirect('/meals');
-  return s;
+  // return s;
 };
