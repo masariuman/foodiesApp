@@ -1,7 +1,7 @@
 "use server";
 
 import { saveMeal } from "@/lib/meals";
-import { redirect } from "next/dist/server/api-utils";
+import { redirect } from "next/navigation";
 
 export const store = async (formData) => {
   const meal = {
@@ -14,5 +14,4 @@ export const store = async (formData) => {
   };
   await saveMeal(meal);
   redirect("/meals");
-  // return s;
 };
