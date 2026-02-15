@@ -1,4 +1,4 @@
-import fs from "node.js";
+import fs from "node:fs";
 
 import sql from "better-sqlite3";
 import slugify from "slugify";
@@ -27,15 +27,13 @@ export async function saveMeal(meal) {
 
   stream.write(Buffer.from(bufferedImage), (error) => {
     if (error) {
-      throw new Error("gagal simpan gamnar!");
+      throw new Error("gagal simpan gambar!");
     }
   });
 
   meal.image = `/images/${fileName}`;
 
   db.prepare(
-    `
-    INSERT INTO meals (title, summary, instructions, creator, creator_email, image, slug) VALUES (?, ?, ?, ?, ?, ?, ?)
-  `,
+    `INSERT INTO meals (title, summary, instructions, creator, creator_email, image, slug) VALUES ( @title, @summary, @instructions, @creator, @creator_email, @image, @slug )`,
   ).run(meal);
 }
