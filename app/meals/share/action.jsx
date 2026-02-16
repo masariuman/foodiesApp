@@ -2,6 +2,7 @@
 
 import { saveMeal } from "@/lib/meals";
 import { redirect } from "next/navigation";
+import { validation } from "./handler";
 
 export const store = async (formData) => {
   const meal = {
@@ -12,6 +13,21 @@ export const store = async (formData) => {
     creator: formData.get("name"),
     creator_email: formData.get("email"),
   };
+
+  if (
+    validation(meal.title) ||
+    validation(meal.summary) ||
+    validation(meal.instructions) ||
+    validation(meal.image) ||
+    validation(meal.creator) ||
+    validation(meal.creator_email) ||
+    !meal.creator_email.includes("@") ||
+    !meal.image ||
+    meal.image.size === 0
+  ) {
+    throw new Error("input salah");
+  }
+
   await saveMeal(meal);
   redirect("/meals");
 };
