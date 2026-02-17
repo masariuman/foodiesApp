@@ -1,6 +1,6 @@
 import Image from "next/image";
 import classes from "./page.module.css";
-import { mealDetail, metadata } from "./handler";
+import { mealDetail } from "./handler";
 
 export const generateMetadata = async ({ params }) => {
   const resolvedParams = await params;
