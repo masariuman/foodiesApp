@@ -3,6 +3,7 @@
 import { saveMeal } from "@/lib/meals";
 import { redirect } from "next/navigation";
 import { validation } from "./handler";
+import { revalidatePath } from "next/cache";
 
 export const store = async (formData) => {
   const meal = {
@@ -31,5 +32,6 @@ export const store = async (formData) => {
   }
 
   await saveMeal(meal);
+  revalidatePath("/", "layout");
   redirect("/meals");
 };
