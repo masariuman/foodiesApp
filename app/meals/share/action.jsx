@@ -25,7 +25,9 @@ export const store = async (formData) => {
     !meal.image ||
     meal.image.size === 0
   ) {
-    throw new Error("input salah");
+    return {
+      message: "Data yang Diisi Salah.",
+    };
   }
 
   await saveMeal(meal);
