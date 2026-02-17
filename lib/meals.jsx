@@ -6,8 +6,7 @@ import xss from "xss";
 
 const db = sql("meals.db");
 
-export async function getMeals() {
-  await new Promise((resolve) => setTimeout(resolve, 2000));
+export function getMeals() {
   return db.prepare("SELECT * FROM meals").all();
 }
 
