@@ -2,7 +2,7 @@
 
 import { store } from "./action";
 
-export const shareMeal = async (prevState, formData) => {
+export const shareMeal = (prevState, formData) => {
   const data = store(formData);
   return data;
 };
