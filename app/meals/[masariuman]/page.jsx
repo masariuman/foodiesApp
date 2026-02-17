@@ -4,7 +4,7 @@ import { mealDetail, metadata } from "./handler";
 
 export const generateMetadata = async ({ params }) => {
   const resolvedParams = await params;
-  const data = await metadata(resolvedParams.masariuman);
+  const data = await mealDetail(resolvedParams.masariuman);
   return {
     title: data.title,
     description: data.summary,
@@ -12,7 +12,8 @@ export const generateMetadata = async ({ params }) => {
 };
 
 export default async function MealDetailsPage({ params }) {
-  const data = await mealDetail({ params });
+  const resolvedParams = await params;
+  const data = await mealDetail(resolvedParams.masariuman);
   return (
     <>
       <header className={classes.header}>
