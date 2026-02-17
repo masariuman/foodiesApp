@@ -1,6 +1,7 @@
 import { getDetail } from "./action";
 
-export const mealDetail = (id) => {
-  const data = getDetail(id.params.masariuman);
+export const mealDetail = async (id) => {
+  const params = await id.params;
+  const data = await getDetail(params.masariuman);
   return data;
 };
