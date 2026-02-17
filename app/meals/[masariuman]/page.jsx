@@ -1,6 +1,15 @@
 import Image from "next/image";
 import classes from "./page.module.css";
-import { mealDetail } from "./handler";
+import { mealDetail, metadata } from "./handler";
+
+export const generateMetadata = async ({ params }) => {
+  const resolvedParams = await params;
+  const data = await metadata(resolvedParams.masariuman);
+  return {
+    title: data.title,
+    description: data.summary,
+  };
+};
 
 export default async function MealDetailsPage({ params }) {
   const data = await mealDetail({ params });
