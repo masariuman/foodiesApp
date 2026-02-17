@@ -1,3 +1,4 @@
+import path from "node:path";
 import fs from "node:fs";
 
 import sql from "better-sqlite3";
@@ -21,7 +22,10 @@ export async function saveMeal(meal) {
   const extension = meal.image.name.split(".").pop();
   const fileName = `${meal.slug}.${extension}`;
 
-  const stream = fs.createWriteStream(`public/images/${fileName}`);
+  const uploadDir = path.join(process.cwd(), "storage", "images");
+  const filePath = path.join(uploadDir, fileName);
+
+  const stream = fs.createWriteStream(filePath);
   const bufferedImage = await meal.image.arrayBuffer();
 
   stream.write(Buffer.from(bufferedImage), (error) => {
@@ -30,7 +34,7 @@ export async function saveMeal(meal) {
     }
   });
 
-  meal.image = `/images/${fileName}`;
+  meal.image = `/api/images/${fileName}`;
 
   db.prepare(
     `INSERT INTO meals (title, summary, instructions, creator, creator_email, image, slug) VALUES ( @title, @summary, @instructions, @creator, @creator_email, @image, @slug )`,

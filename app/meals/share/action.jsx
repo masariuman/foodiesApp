@@ -16,12 +16,12 @@ export const store = async (formData) => {
   };
 
   if (
-    validation(meal.title) ||
-    validation(meal.summary) ||
-    validation(meal.instructions) ||
-    validation(meal.image) ||
-    validation(meal.creator) ||
-    validation(meal.creator_email) ||
+    (await validation(meal.title)) ||
+    (await validation(meal.summary)) ||
+    (await validation(meal.instructions)) ||
+    (await validation(meal.image)) ||
+    (await validation(meal.creator)) ||
+    (await validation(meal.creator_email)) ||
     !meal.creator_email.includes("@") ||
     !meal.image ||
     meal.image.size === 0
